@@ -15,25 +15,16 @@
 }
 
 - (IBAction)previous:(id)sender {
-//    if ([self.delegate respondsToSelector:@selector(keyboardToolDidClickPreviousItem:)]) {
-//        [self.delegate keyboardToolDidClickPreviousItem:self];
-//    }
     if ([self.toolbarDelegate respondsToSelector:@selector(keyboardTool:didClickItem:)]) {
         [self.toolbarDelegate keyboardTool:self didClickItem:JSKeyboardToolItemPrevious];
     }
 }
 - (IBAction)next:(id)sender {
-//    if ([self.delegate respondsToSelector:@selector(keyboardToolDidClickNextItem:)]) {
-//        [self.delegate keyboardToolDidClickNextItem:self];
-//    }
     if ([self.toolbarDelegate respondsToSelector:@selector(keyboardTool:didClickItem:)]) {
         [self.toolbarDelegate keyboardTool:self didClickItem:JSKeyboardToolItemNext];
     }
 }
 - (IBAction)down:(id)sender {
-//    if ([self.delegate respondsToSelector:@selector(keyboardToolDidClickDoneItem:)]) {
-//        [self.delegate keyboardToolDidClickDoneItem:self];
-//    }
     if ([self.toolbarDelegate respondsToSelector:@selector(keyboardTool:didClickItem:)]) {
         [self.toolbarDelegate keyboardTool:self didClickItem:JSKeyboardToolItemDone];
     }

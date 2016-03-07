@@ -21,10 +21,6 @@ typedef enum {
 @optional
 - (void)keyboardTool:(JSKeyboardTool *)tool didClickItem:(JSKeyboardToolItem)item;
 
-//- (void)keyboardToolDidClickPreviousItem:(JSKeyboardTool *)tool;
-//- (void)keyboardToolDidClickNextItem:(JSKeyboardTool *)tool;
-//- (void)keyboardToolDidClickDoneItem:(JSKeyboardTool *)tool;
-
 @end
 
 @interface JSKeyboardTool : UIToolbar
